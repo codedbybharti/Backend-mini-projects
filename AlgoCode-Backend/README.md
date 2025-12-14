@@ -34,11 +34,13 @@ This project is currently **under active development**.
 
 ---
 
-## 📂 Project Structure
+## 📁 Project Structure
+
 src/
 ├── config/
 │   ├── db.config.js
-│   └── server.config.js
+│   ├── server.config.js
+│   └── index.js
 │
 ├── models/
 │   ├── problem.model.js
@@ -66,6 +68,7 @@ src/
 │
 ├── app.js
 └── index.js
+
 ---
 
 ## 🧠 Architecture Overview
@@ -106,3 +109,4 @@ MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/algocod
 ```bash
 npm run dev
 ```
+
