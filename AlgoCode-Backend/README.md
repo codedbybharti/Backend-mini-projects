@@ -112,69 +112,35 @@ npm run dev
 ## 🏗️ Architecture Flow Diagram
 
 Client (Postman / Frontend)
-          │
-          ▼
-┌───────────────────────┐
-│       Routes          │
-│  (problem.routes.js)  │
-└───────────────────────┘
-          │
-          ▼
-┌──────────────────────────┐
-│       Controllers        │
-│ (problem.controller.js)  │
-│ - Handles HTTP req/res   │
-└──────────────────────────┘
-          │
-          ▼
-┌──────────────────────────┐
-│        Services          │
-│  (problem.service.js)   │
-│ - Business logic        │
-│ - Validation            │
-│ - Markdown Sanitizing   │
-└──────────────────────────┘
-          │
-          ▼
-┌──────────────────────────┐
-│      Repositories       │
-│ (problem.repository.js) │
-│ - Database operations   │
-└──────────────────────────┘
-          │
-          ▼
-┌──────────────────────────┐
-│        Models            │
-│  (problem.model.js)     │
-│ - Schema definition     │
-└──────────────────────────┘
-          │
-          ▼
-┌──────────────────────────┐
-│        MongoDB           │
-│     (Atlas Database)    │
-└──────────────────────────┘
-
-## Request–Response Lifecycle
-
-Client Request
-   ↓
-Route
-   ↓
-Controller
-   ↓
-Service
-   ↓
-Repository
-   ↓
+│
+▼
+Routes
+(problem.routes.js)
+│
+▼
+Controllers
+(problem.controller.js)
+│  └─ Handles HTTP Requests & Responses
+│
+▼
+Services
+(problem.service.js)
+│  ├─ Business Logic
+│  ├─ Validation
+│  └─ Markdown Sanitization
+│
+▼
+Repositories
+(problem.repository.js)
+│  └─ Database Operations
+│
+▼
+Models
+(problem.model.js)
+│  └─ Schema Definition
+│
+▼
 MongoDB
-   ↓
-Repository
-   ↓
-Service
-   ↓
-Controller
-   ↓
-Client Response
+(Atlas Database)
 
 
