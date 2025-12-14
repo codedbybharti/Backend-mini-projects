@@ -34,42 +34,6 @@ This project is currently **under active development**.
 
 ---
 
-## 📁 Project Structure
-
-src/
-├── config/
-│   ├── db.config.js
-│   ├── server.config.js
-│   └── index.js
-│
-├── models/
-│   ├── problem.model.js
-│   └── index.js
-│
-├── repositories/
-│   ├── problem.repository.js
-│   └── index.js
-│
-├── services/
-│   ├── problem.service.js
-│   └── index.js
-│
-├── controllers/
-│   ├── problem.controller.js
-│   └── index.js
-│
-├── routes/
-│   ├── problem.routes.js
-│   └── index.js
-│
-├── utils/
-│   ├── markdownSanitizer.js
-│   └── index.js
-│
-├── app.js
-└── index.js
-
----
 
 ## 🧠 Architecture Overview
 Client (Postman / Frontend)
@@ -109,38 +73,7 @@ MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/algocod
 ```bash
 npm run dev
 ```
-## 🏗️ Architecture Flow Diagram
 
-Client (Postman / Frontend)
-│
-▼
-Routes
-(problem.routes.js)
-│
-▼
-Controllers
-(problem.controller.js)
-│  └─ Handles HTTP Requests & Responses
-│
-▼
-Services
-(problem.service.js)
-│  ├─ Business Logic
-│  ├─ Validation
-│  └─ Markdown Sanitization
-│
-▼
-Repositories
-(problem.repository.js)
-│  └─ Database Operations
-│
-▼
-Models
-(problem.model.js)
-│  └─ Schema Definition
-│
-▼
-MongoDB
-(Atlas Database)
+
 
 
