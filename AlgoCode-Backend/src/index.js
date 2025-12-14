@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import apiRouter from "./routes/index.js";
+import apiRouter from "./routes/index.js"
 import mongoose from "mongoose";
 import {PORT} from "./config/server.config.js";
 import { connectToDB } from "./config/db.config.js";

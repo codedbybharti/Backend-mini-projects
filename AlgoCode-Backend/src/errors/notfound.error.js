@@ -1,6 +1,7 @@
 import BaseError from "./base.error.js";
+import { StatusCodes } from "http-status-codes";
 
-class NotFoundError extends BaseError {
+export class NotFoundError extends BaseError {
   constructor(resourceName, resourceValue) {
     super(
       "NotFound",
@@ -13,5 +14,3 @@ class NotFoundError extends BaseError {
     );
   }
 }
-
-export default NotFoundError;

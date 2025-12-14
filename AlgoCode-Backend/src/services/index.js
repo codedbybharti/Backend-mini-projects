@@ -1,1 +1,1 @@
-export const ProblemService = require('./problem.service.js')
+export { ProblemService } from "./problem.service.js";

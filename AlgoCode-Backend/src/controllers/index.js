@@ -1,10 +1,15 @@
-import { addProblem, getAllProblems, getProblemById, updateProblemById, deleteProblemById,  } from "./problem.controller.js";
+import {
+  addProblem,
+  getProblems,
+  getProblem,
+  updateProblemById,
+  deleteProblemById,
+} from "./problem.controller.js";
 
 export const ProblemController = {
-    addProblem,
-    getAllProblems,
-    getProblemById,
-    updateProblemById,
-    deleteProblemById,
-
+  addProblem,
+  getProblems,
+  getProblem,
+  updateProblemById,
+  deleteProblemById,
 };
