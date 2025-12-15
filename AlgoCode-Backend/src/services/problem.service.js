@@ -1,5 +1,5 @@
 import { sanitizeMarkdownContent } from "../utils/markdownSanitizer.js";
-import { ProblemRepository } from "../repositories/problem.repository.js";
+
 
 
 // const problemRepository = new ProblemRepository();
@@ -29,8 +29,8 @@ export class ProblemService {
     return problem;
   }
 
-  async deleteProblem(problemId) {
-    const problem = await this.problemRepository.deleteProblem(problemId);
+  async deleteProblemById(problemId) {
+    const problem = await this.problemRepository.deleteProblemById(problemId);
     return problem;
   }
 }

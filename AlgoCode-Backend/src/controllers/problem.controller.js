@@ -21,6 +21,7 @@ export const addProblem = async (req, res, next) => {
 };
 export async function getProblem(req, res, next) {
   try {
+    // console.log(req.params.id);
     const problem = await problemService.getProblem(req.params.id);
     return res.status(StatusCodes.OK).json({
       success: true,
