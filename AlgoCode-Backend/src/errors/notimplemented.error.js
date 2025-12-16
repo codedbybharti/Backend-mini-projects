@@ -1,7 +1,7 @@
 import BaseError from "./base.error.js";
 import { StatusCodes } from "http-status-codes";
 
-class NotImplementedError extends BaseError {
+export class NotImplementedError extends BaseError {
   constructor(methodName, details = {}) {
     super(
       "NotImplementedError",
@@ -11,5 +11,3 @@ class NotImplementedError extends BaseError {
     );
   }
 }
-
-export default NotImplementedError;

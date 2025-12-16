@@ -1,7 +1,7 @@
 import BaseError from "./base.error";
 import { StatusCodes } from "http-status-codes";
 
-class InternalServerError extends BaseError {
+export class InternalServerError extends BaseError {
   constructor(details) {
     super("InternalServerError", 
     StatusCodes.INTERNAL_SERVER_ERROR, 
@@ -10,4 +10,4 @@ class InternalServerError extends BaseError {
   }
 }
 
-export default InternalServerError;
+

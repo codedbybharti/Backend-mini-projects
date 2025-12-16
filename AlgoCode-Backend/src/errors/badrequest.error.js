@@ -1,7 +1,7 @@
-const BaseError = require("./base.error");
+import BaseError from "./base.error";
 import { StatusCodes } from "http-status-codes";
 
-class BadRequestError extends BaseError {
+export class BadRequestError extends BaseError {
   constructor(propertyName, details) {
     super(
       "BadRequest",
@@ -12,4 +12,4 @@ class BadRequestError extends BaseError {
   }
 }
 
-export default BadRequestError;
+
